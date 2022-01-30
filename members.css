@@ -1,0 +1,20 @@
+body{
+background-color: FFFFFF;
+color: 000000;
+margin: 10px;
+font-size: 12;
+font-family: 'Courier New', monospace;}
+A:link{ text-decoration: none; font-weight: bold; font-size: 12;
+color: 0000FF}
+A:visited{
+text-decoration: none;
+font-weight: bold;
+font-size: 12;
+color: 0000FF}
+A:active{ text-decoration: none; font-weight: bold; font-size: 12;
+color: 0000FF}
+A:hover{
+text-decoration: none;
+font-weight: bold;
+font-size: 12;
+color: 000000}
