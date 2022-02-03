@@ -1,17 +1,10 @@
-var request = new XMLHttpRequest()
+const app = document.getElementById('root')
 
-request.open('GET', 'https://ghibliapi.herokuapp.com/films', true)
-request.onload = function () {
-  // Begin accessing JSON data here
-  var data = JSON.parse(this.response)
+const logo = document.createElement('img')
+logo.src = 'logo.png'
 
-  if (request.status >= 200 && request.status < 400) {
-    data.forEach(movie => {
-      console.log(movie.title)
-    })
-  } else {
-    console.log('error')
-  }
-}
+const container = document.createElement('div')
+container.setAttribute('class', 'container')
 
-request.send()
+app.appendChild(logo)
+app.appendChild(container)
