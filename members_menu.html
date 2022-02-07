@@ -1,5 +1,8 @@
 <html>
 <head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 table {
   font-family: 'Courier New', monospace;
@@ -30,28 +33,63 @@ tr:nth-child(odd) {
   <tr>
     <td style="width:192"><img src="Kirbo.png" alt="Grifferthrydwy" height="180"></td>
     <td style="font-size:60px"><b>SimplyCmd</b></td>
-    <td style="text-align:center"><div id="root"></div>
-    <script src="scripts.js"></script></td>
+    <td style="text-align:center"><p id="simplycmd">loading</p>
+    <script>
+        fetch("https://retoolapi.dev/4WNtZR/data/1")
+            .then((simplycmd) => simplycmd.json())
+            .then((simplycmd) => {
+                document.getElementById("simplycmd").innerText = simplycmd.rating ? "active" : "inactive";
+                console.log(simplycmd)
+            });
+    </script></td>
   </tr>
   <tr>
     <td><img src="ryo.jpeg" alt="Ryorama" height="180"></td>
     <td style="font-size:60px"><b>Ryorama</b></td>
-    <td style="text-align:center">bottom text</td>
+    <td style="text-align:center"><p id="ryorama">loading</p>
+    <script>
+        fetch("https://retoolapi.dev/4WNtZR/data/2")
+            .then((ryorama) => ryorama.json())
+            .then((ryorama) => {
+                document.getElementById("ryorama").innerText = ryorama.rating ? "active" : "inactive";
+            });
+    </script></td>
   </tr>
   <tr>
     <td><img src="ibex.jpeg" alt="Ibex" height="180"></td>
     <td style="font-size:60px"><b>Ibex</b></td>
-    <td style="text-align:center">bottom text</td>
+    <td style="text-align:center"><p id="ibex">loading</p>
+    <script>
+        fetch("https://retoolapi.dev/4WNtZR/data/3")
+            .then((ibex) => ibex.json())
+            .then((ibex) => {
+                document.getElementById("ibex").innerText = ibex.rating ? "active" : "inactive";
+            });
+    </script></td>
   </tr>
   <tr>
     <td><img src="Kirbo.png" alt="Grifferthrydwy" height="180"></td>
     <td style="font-size:60px"><b>Jab</b></td>
-    <td style="text-align:center">bottom text</td>
+    <td style="text-align:center"><p id="jab">loading</p>
+    <script>
+        fetch("https://retoolapi.dev/4WNtZR/data/4")
+            .then((jab) => jab.json())
+            .then((jab) => {
+                document.getElementById("jab").innerText = jab.rating ? "active" : "inactive";
+            });
+    </script></td>
   </tr>
   <tr>
     <td><img src="Kirbo.png" alt="Grifferthrydwy" height="180"></td>
     <td style="font-size:60px"><b>Grifferthrydwy</b></td>
-    <td style="text-align:center">bottom text</td>
+    <td style="text-align:center"><p id="grifferthrydwy">loading</p>
+    <script>
+        fetch("https://retoolapi.dev/4WNtZR/data/5")
+            .then((grifferthrydwy) => grifferthrydwy.json())
+            .then((grifferthrydwy) => {
+                document.getElementById("grifferthrydwy").innerText = grifferthrydwy.rating ? "active" : "inactive";
+            });
+    </script></td>
   </tr>
 
 </table>
