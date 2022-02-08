@@ -31,14 +31,14 @@ tr:nth-child(odd) {
 <table>
 
   <tr>
-    <td style="width:192"><img src="Kirbo.png" alt="Grifferthrydwy" height="180"></td>
+    <td style="width:192"><img src="cmd.jpeg" alt="SimplyCmd" height="180"></td>
     <td style="font-size:60px"><b>SimplyCmd</b></td>
     <td style="text-align:center"><p id="simplycmd">loading</p>
     <script>
-        fetch("https://retoolapi.dev/4WNtZR/data/1")
+        fetch("https://retoolapi.dev/L2xKDd/data/1")
             .then((simplycmd) => simplycmd.json())
             .then((simplycmd) => {
-                document.getElementById("simplycmd").innerText = simplycmd.rating ? "active" : "inactive";
+                document.getElementById("simplycmd").innerText = simplycmd.isUser ? "ACTIVE" : "INACTIVE";
                 console.log(simplycmd)
             });
     </script></td>
@@ -48,10 +48,10 @@ tr:nth-child(odd) {
     <td style="font-size:60px"><b>Ryorama</b></td>
     <td style="text-align:center"><p id="ryorama">loading</p>
     <script>
-        fetch("https://retoolapi.dev/4WNtZR/data/2")
+        fetch("https://retoolapi.dev/L2xKDd/data/2")
             .then((ryorama) => ryorama.json())
             .then((ryorama) => {
-                document.getElementById("ryorama").innerText = ryorama.rating ? "active" : "inactive";
+                document.getElementById("ryorama").innerText = ryorama.isUser ? "ACTIVE" : "INACTIVE";
             });
     </script></td>
   </tr>
@@ -60,10 +60,10 @@ tr:nth-child(odd) {
     <td style="font-size:60px"><b>Ibex</b></td>
     <td style="text-align:center"><p id="ibex">loading</p>
     <script>
-        fetch("https://retoolapi.dev/4WNtZR/data/3")
+        fetch("https://retoolapi.dev/L2xKDd/data/3")
             .then((ibex) => ibex.json())
             .then((ibex) => {
-                document.getElementById("ibex").innerText = ibex.rating ? "active" : "inactive";
+                document.getElementById("ibex").innerText = ibex.isUser ? "ACTIVE" : "INACTIVE";
             });
     </script></td>
   </tr>
@@ -72,10 +72,10 @@ tr:nth-child(odd) {
     <td style="font-size:60px"><b>Jab</b></td>
     <td style="text-align:center"><p id="jab">loading</p>
     <script>
-        fetch("https://retoolapi.dev/4WNtZR/data/4")
+        fetch("https://retoolapi.dev/L2xKDd/data/4")
             .then((jab) => jab.json())
             .then((jab) => {
-                document.getElementById("jab").innerText = jab.rating ? "active" : "inactive";
+                document.getElementById("jab").innerText = jab.isUser ? "ACTIVE" : "INACTIVE";
             });
     </script></td>
   </tr>
@@ -84,10 +84,10 @@ tr:nth-child(odd) {
     <td style="font-size:60px"><b>Grifferthrydwy</b></td>
     <td style="text-align:center"><p id="grifferthrydwy">loading</p>
     <script>
-        fetch("https://retoolapi.dev/4WNtZR/data/5")
+        fetch("https://retoolapi.dev/L2xKDd/data/5")
             .then((grifferthrydwy) => grifferthrydwy.json())
             .then((grifferthrydwy) => {
-                document.getElementById("grifferthrydwy").innerText = grifferthrydwy.rating ? "active" : "inactive";
+                document.getElementById("grifferthrydwy").innerText = grifferthrydwy.isUser ? "ACTIVE" : "INACTIVE";
             });
     </script></td>
   </tr>
